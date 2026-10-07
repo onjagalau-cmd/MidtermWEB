@@ -1,0 +1,98 @@
+/* Подключаем единый шрифт Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --accent-cyan: #38bdf8;
+    --accent-gold: #f59e0b;
+    --text-light: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* Перебиваем дефолтный вид Bootstrap */
+.navbar {
+    background-color: #0b1120 !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    color: var(--accent-cyan) !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-cyan) !important;
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-light) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Кастомные media queries (Task 1 / Требование мидтерма) */
+.custom-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .custom-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .custom-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Кастомные стили для таблиц и форм */
+.table-custom {
+    color: var(--text-light);
+    border-color: var(--border-color);
+}
+
+.table-custom th {
+    background-color: var(--card-bg);
+    color: var(--accent-cyan);
+}
+
+.form-control, .form-select {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-light) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Footer */
+footer {
+    background-color: #0b1120;
+    border-top: 1px solid var(--border-color);
+}

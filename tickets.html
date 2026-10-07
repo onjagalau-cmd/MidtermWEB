@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootballPulse - Buy Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">⚽ FootballPulse</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stats.html">Stats & Table</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tickets.html">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="matches.html">Matches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 col-md-6">
+        <h2 class="text-center mb-4 text-info">Match Ticket Booking</h2>
+        <!-- ТРЕБОВАНИЕ: Наличие формы -->
+        <form class="card p-4 shadow">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Select Match</label>
+                <select class="form-select">
+                    <option>Real Madrid vs Man City</option>
+                    <option>Arsenal vs Chelsea</option>
+                    <option>Barcelona vs PSG</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Ticket Category</label>
+                <div>
+                    <input type="radio" name="cat" id="c1" checked> <label for="c1" class="me-3">Standard ($50)</label>
+                    <input type="radio" name="cat" id="c2"> <label for="c2">VIP Pass ($150)</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-info w-100 fw-bold">Confirm Purchase</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
