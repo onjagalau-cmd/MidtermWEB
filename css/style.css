@@ -17,7 +17,6 @@ body {
     color: var(--text-light);
 }
 
-/* Перебиваем дефолтный вид Bootstrap */
 .navbar {
     background-color: #0b1120 !important;
     border-bottom: 1px solid var(--border-color);
@@ -49,7 +48,6 @@ body {
     box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
 }
 
-/* Кастомные media queries (Task 1 / Требование мидтерма) */
 .custom-grid {
     display: flex;
     flex-direction: column;
@@ -69,7 +67,6 @@ body {
     }
 }
 
-/* Кастомные стили для таблиц и форм */
 .table-custom {
     color: var(--text-light);
     border-color: var(--border-color);
